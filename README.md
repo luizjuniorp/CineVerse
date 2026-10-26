@@ -4,6 +4,23 @@ O CineVerse é uma aplicação web para descobrir filmes e séries. O catálogo 
 
 Os dados de filmes e séries são obtidos da API do [The Movie Database (TMDB)](https://www.themoviedb.org/). A interface está em português do Brasil e foi desenvolvida para funcionar em diferentes tamanhos de tela.
 
+## Acesse o projeto
+
+O CineVerse está publicado no Vercel: [cine-verse-omega-nine.vercel.app](https://cine-verse-omega-nine.vercel.app/).
+
+## Demonstração
+
+Capturas de algumas páginas do projeto:
+
+<p align="center">
+  <img src="./screenshots/inicio.jpg" alt="Página inicial do CineVerse" width="49%" />
+  <img src="./screenshots/busca.jpg" alt="Busca de filmes e séries" width="49%" />
+</p>
+<p align="center">
+  <img src="./screenshots/detalhes.jpg" alt="Página de detalhes de um filme" width="49%" />
+  <img src="./screenshots/favoritos.jpg" alt="Página de favoritos" width="49%" />
+</p>
+
 ## Funcionalidades
 
 - Página inicial com destaques, tendências, títulos mais bem avaliados e próximos lançamentos.
