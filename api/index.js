@@ -30,12 +30,17 @@ export default async function handler(req, res) {
 
   try {
     const requestUrl = new URL(req.url, "http://localhost");
-    const response = await fetch(`${TMDB_API_BASE}/${route}${requestUrl.search}`, {
-      headers: {
-        accept: "application/json",
-        Authorization: `Bearer ${token}`,
+    requestUrl.searchParams.delete("path");
+    const query = requestUrl.searchParams.toString();
+    const response = await fetch(
+      `${TMDB_API_BASE}/${route}${query ? `?${query}` : ""}`,
+      {
+        headers: {
+          accept: "application/json",
+          Authorization: `Bearer ${token}`,
+        },
       },
-    });
+    );
     const body = await response.text();
 
     res.setHeader("Content-Type", response.headers.get("content-type") || "application/json");

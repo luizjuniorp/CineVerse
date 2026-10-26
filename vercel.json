@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/api/tmdb/:path*", "destination": "/api?path=:path*" },
     { "source": "/search", "destination": "/" },
     { "source": "/favorites", "destination": "/" },
     { "source": "/movie/:id", "destination": "/" },
